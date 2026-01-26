@@ -27,7 +27,7 @@ def Start():
         bufferThread.start()
     else :
         camera.stop()
-        if bufferThread != None:
+        if bufferThread is not None:
             bufferThread.join()
         start_button.config(text="Start")
 
